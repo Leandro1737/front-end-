@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-size: 22px;
+            font-family: sans-serif;
+            width: 700px;
+            margin: auto;
+
+            background-image: url(imagens/hinh-nen-anime-4k-fanart_062428687.jpg);
+            background-repeat: no-repeat;
+            /*Garante que a imagem não se repita.Por padrão, se a imagem for menor que o elemento, ela se repete em mosaico. Esse comando impede isso.*/
+            background-attachment: fixed;
+            /*Faz com que a imagem de fundo fique fixa na tela, ou seja:Ela não se move quando a página rola (scroll).*/
+            background-size: cover;
+            /*Define o tamanho da imagem de fundo.*/
+            background-position: center bottom;
+            /*Alinha a imagem de fundo no canto inferior direito do elemento.
+            right → lado direito.
+            bottom → parte de baixo.*/
+
+            /*Resumo visual:A imagem de fundo ficará fixa no fundo da tela, alinhada no 
+            canto inferior direito, sem repetir, ocupando toda a largura, e sem rolar junto com o conteúdo.*/
+        }
+
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+
+        p {
+            list-style: 1.5;
+            color: beige;
+            background-color: black;
+        }
+
+        .img-logo {
+            width: 400px;
+        }
+
+        .img-html {
+            float: left;
+        }
+
+        .img-css {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com imagens</h1>
+
+    <h2>Imagens vetoriais vs bitmap</h2>
+
+    <img src="imagens/logo_ser-frontend-ico.png" class="img-logo" alt="logotipo serfrontend">
+    <br>
+    <img src="imagens/logo_ser-frontend-ico.svg" class="img-logo" alt="logotipo serfrontend">
+
+    <h2>Imagens Transparentes</h2>
+
+    <img src="imagens/logo_ser-frontend-ico-transparente.gif" alt="">
+    <br>
+    <img src="imagens/logo_ser-frontend-ico-transparente.png" alt="">
+
+    <h2>Gif Animado</h2>
+    <img src="imagens/walk.gif" alt="Animação mulher andando">
+
+    <h2>Float</h2>
+
+    <img src="imagens/html5.png" alt="logotipo HTML 5" class="img-html">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit similique quidem iusto est in cumque
+        perspiciatis, numquam mollitia illo vero autem omnis necessitatibus perferendis minima ipsam sit minus aut
+        consequuntur eius earum? Dolorum quasi tempore reprehenderit neque esse dicta, voluptatibus culpa architecto
+        fuga, aperiam incidunt voluptate et quisquam eius deleniti!</p>
+    <img src="imagens/css3.png" alt="logotipo CSS3" class="img-css">
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit similique quidem iusto est in cumque
+        perspiciatis, numquam mollitia illo vero autem omnis necessitatibus perferendis minima ipsam sit minus aut
+        consequuntur eius earum? Dolorum quasi tempore reprehenderit neque esse dicta, voluptatibus culpa architecto
+        fuga, aperiam incidunt voluptate et quisquam eius deleniti!</p>
+
+</body>
+
+</html>
