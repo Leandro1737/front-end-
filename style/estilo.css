@@ -8,6 +8,7 @@ body{
     background-size: cover;
     height: 500px;
     background-position: center right;
+    padding-top: 1px;
 }
 .hero-content {
     text-align: center;
@@ -31,7 +32,7 @@ body{
 }
 .menu{
     
-    text-align: right;
+    text-align: right; 
 }
 .menu li{
     list-style: none;
@@ -42,10 +43,15 @@ body{
     padding: 16px;
     background-color: #c1bebe;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 12px;
+    text-decoration: none;
 }
 a:hover {
     background-color: rgb(184, 183, 240);
     color: rgb(4, 4, 139);
     text-decoration: none;
+}
+.hero nav li{
+    display: inline-block;
+    list-style-type: none;
 }
